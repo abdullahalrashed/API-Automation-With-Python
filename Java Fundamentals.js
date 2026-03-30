@@ -223,3 +223,21 @@ let nextDate = '27'
 let diff = parseInt(nextDate) - parseInt(date)
 console.log(diff)
 diff.toString()
+
+let newQuote =day+ "is Funday day"
+console.log(newQuote)
+let val =newQuote.indexOf("day",5)
+console.log(val)
+//tuesday is Funday  
+let count = 0
+let value =newQuote.indexOf("day")
+while(value!== -1)
+{
+    count++ //2
+    value =newQuote.indexOf("day",value+1)
+
+}
+console.log(count)
+
+let person =new Person("Chris","Edward")
+console.log(person.fullName())
