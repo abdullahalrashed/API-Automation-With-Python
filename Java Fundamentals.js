@@ -109,3 +109,38 @@ for(let i =0;i<marks.length;i++)
 return sum;
 }
 console.log(SumMarks())
+
+
+// mehtod of reduce 
+// syntex is 
+// Array.reduce((accumalor,curret value, index, array) => code,initial value)
+var marks =[20,40,35,12,37,100]
+let total = marks.reduce((sum,mark) => sum + mark,0)
+console.log(total)
+
+// creating a new array for practice
+
+var scores = [12,14,15,16,17]
+var EvenScores = []
+var OddScores = []
+for(i=0; i<scores.length; i++)
+{
+    if(scores[i] %2 == 0)
+    {
+        EvenScores.push(scores[i])
+    }
+    else
+    {
+        OddScores.push(scores[i])
+    }
+}
+console.log(EvenScores)
+console.log(OddScores)
+
+// syntex for filter
+// array.filter((element,index,filter) => condition)
+var scores = [12,14,15,16,17]
+let NewFilterEvenScore = scores.filter(score => score%2 == 0)
+console.log(NewFilterEvenScore)
+let NewFilterOddScore = scores.filter(score => score%2 == 1)
+console.log(NewFilterOddScore)
