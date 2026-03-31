@@ -91,7 +91,7 @@
 							"const jsonData = pm.response.json();    ",
 							"",
 							"pm.expect(jsonData >10000).to.be.false;",
-							"pm.expect(jsonData.category).to.eql(\"Javascript\");"
+							"pm.expect(jsonData.category).to.deep.eql(\"Javascript\");"
 						],
 						"type": "text/javascript",
 						"packages": {},
