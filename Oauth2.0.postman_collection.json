@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "96c9c29c-4405-48ba-812d-d783828cbd07",
-		"name": "Oauth",
+		"name": "Oauth2.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "49466730"
 	},
@@ -158,7 +158,30 @@
 							"{",
 							"    const cypressObject = jsonData.courses.webAutomation.find(m => m.courseTitle === \"Cypress\")",
 							"    pm.expect(cypressObject).to.have.all.keys('courseTitle', 'price')   ",
-							"});"
+							"});",
+							"",
+							"// verify if sum of API courses equals to 90",
+							"",
+							"pm.test(\"Validate sum of API Courses\", function ()",
+							"{",
+							"    sum = 0;",
+							"    for(let i =0; i<jsonData.courses.api.price; i++)",
+							"    {",
+							"        sum = sum + parseInt(jsonData.courses.api[i].price);",
+							"    }",
+							"    console.log(sum)",
+							"    pm.expect(sum).to.equal(90);",
+							"});",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							"",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {},
@@ -171,6 +194,46 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "erZOWM9g3UtwNRj340YYaK_W",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://www.googleapis.com/oauth2/v4/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://rahulshettyacademy.com/getCourse.php",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Acces_token",
+							"type": "string"
+						},
+						{
 							"key": "addTokenTo",
 							"value": "header",
 							"type": "string"
@@ -180,7 +243,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://rahulshettyacademy.com/getCourse.php?access_token=ya29.a0AfH6SMD-EytFH41srRFqd55ewFQGIJDcuEq-uhPn4UYeXmyRkY5NY0VBPYZgAk2zou8KRYZpspkrC3QtrhKS5McUsWoxCFpWoYEVFq3rN00eJCicj-_j9xv8Q-9gTumTGy5rJxgfkMrTVZSbtWnB2LSR0C1L",
+					"raw": "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AY0e-g6jtq1-b9RHUtSn5ZnfOppBlB3wzd2FIQO76y4XrKmMwaqaO0p5e4FfZkrkoeXiSg&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none&access_token=ya29.a0Aa7MYipH7HMxoYvn7fVqu8JtwDPg36QQoKfvglU2BkOLs1_WffylvUmoKZo_IXB3dmJfb1uD-qbrKwZbagua62rvSwnQoXNGnnsC0JGqif_hgQ_P_6dxYaL3md4Z6vfz1H9coiIFd3spRztlwiuWjjh55HmiXw0VmiDEGSMgN5Ac8skvIJcBv1MBcQASIJawtVdb94cY7ZWaVJAc4dxnX4mFU8HmztYZ1UwqEkf2VAF5nNu2yHQlieMqSFn10OL63CMmTjE3oXFhn67YzgFl7M67pUr6aCgYKARgSARESFQHGX2MiWJqygzhD6PICtWYbCaf13w0291#",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -191,10 +254,27 @@
 					],
 					"query": [
 						{
+							"key": "code",
+							"value": "4%2F0AY0e-g6jtq1-b9RHUtSn5ZnfOppBlB3wzd2FIQO76y4XrKmMwaqaO0p5e4FfZkrkoeXiSg"
+						},
+						{
+							"key": "scope",
+							"value": "email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email"
+						},
+						{
+							"key": "authuser",
+							"value": "0"
+						},
+						{
+							"key": "prompt",
+							"value": "none"
+						},
+						{
 							"key": "access_token",
-							"value": "ya29.a0AfH6SMD-EytFH41srRFqd55ewFQGIJDcuEq-uhPn4UYeXmyRkY5NY0VBPYZgAk2zou8KRYZpspkrC3QtrhKS5McUsWoxCFpWoYEVFq3rN00eJCicj-_j9xv8Q-9gTumTGy5rJxgfkMrTVZSbtWnB2LSR0C1L"
+							"value": "ya29.a0Aa7MYipH7HMxoYvn7fVqu8JtwDPg36QQoKfvglU2BkOLs1_WffylvUmoKZo_IXB3dmJfb1uD-qbrKwZbagua62rvSwnQoXNGnnsC0JGqif_hgQ_P_6dxYaL3md4Z6vfz1H9coiIFd3spRztlwiuWjjh55HmiXw0VmiDEGSMgN5Ac8skvIJcBv1MBcQASIJawtVdb94cY7ZWaVJAc4dxnX4mFU8HmztYZ1UwqEkf2VAF5nNu2yHQlieMqSFn10OL63CMmTjE3oXFhn67YzgFl7M67pUr6aCgYKARgSARESFQHGX2MiWJqygzhD6PICtWYbCaf13w0291"
 						}
-					]
+					],
+					"hash": ""
 				}
 			},
 			"response": []
@@ -205,7 +285,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://rahulshettyacademy.com/getCourse.php?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8FAWxUqzFdzHv4FQQD4IebB3pwe0AbttV7DKYFFwRSKuYGBGoXNnMRj_U5J_rmCg&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=none",
+					"raw": "https://rahulshettyacademy.com/getCourse.php?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E9Fjnk2Kai4PjhBNaGIaks_xRdYlPCo2GJIaV8sYdHK-xUE17R3iWvO4UPvkIiADQ&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=none",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -221,7 +301,7 @@
 						},
 						{
 							"key": "code",
-							"value": "4%2F0Aci98E8FAWxUqzFdzHv4FQQD4IebB3pwe0AbttV7DKYFFwRSKuYGBGoXNnMRj_U5J_rmCg"
+							"value": "4%2F0Aci98E9Fjnk2Kai4PjhBNaGIaks_xRdYlPCo2GJIaV8sYdHK-xUE17R3iWvO4UPvkIiADQ"
 						},
 						{
 							"key": "scope",
