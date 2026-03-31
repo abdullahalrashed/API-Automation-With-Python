@@ -18,7 +18,7 @@
 							"pm.test(\"Validate String of response\", function()",
 							"{",
 							"const actualValue =responsejson[\"soap:Envelope\"][\"soap:Body\"][\"m:NumberToWordsResponse\"][\"m:NumberToWordsResult\"];",
-							"    pm.expect(\"Four hundred\").to.be.eql(\"actualValue\");",
+							"    pm.expect(pm.collectionVariables.get(\"val\")).to.be.eql(\"actualValue\");",
 							"});"
 						],
 						"type": "text/javascript",
@@ -77,7 +77,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5868a96e-106c-40aa-95bf-74df845d1032",
+				"id": "bf92f285-c430-4869-bcd0-ab2dfe452705",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -89,7 +89,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b2ef5ae8-1ea1-4392-a49d-5871f69ffe03",
+				"id": "e8669612-334f-46bb-9ccc-313a22778a91",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
