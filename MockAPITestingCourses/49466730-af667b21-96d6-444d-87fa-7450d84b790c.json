@@ -7,6 +7,28 @@
 	"item": [
 		{
 			"name": "getapitestingcourses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "916cc5fb-06ed-4f7f-8317-aa58230dbc96",
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"",
+							"jsonData.data.forEach(function(item)",
+							"{",
+							"    if (item.category == \"Javascript\")",
+							"    {",
+							"        console.log(item.course)",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-5476d52f-42e7-4555-90cb-ab4c68d82134",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
