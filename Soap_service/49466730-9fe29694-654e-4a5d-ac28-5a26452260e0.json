@@ -7,6 +7,23 @@
 	"item": [
 		{
 			"name": "numbertoWords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b60864c4-be2f-4ba5-aa9a-9ca31fda1416",
+						"exec": [
+							"const responsejson = xml2Js(p.response.text())",
+							"console.log(responsejson)",
+							"console.log(responsejson[\"soap:Envelope\"][\"soap:Body\"][\"m:NumberToWordsResponse\"][\"m:NumberToWordsResult\"]);",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-092b7658-c3b5-434e-93f5-5468247b3517",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
