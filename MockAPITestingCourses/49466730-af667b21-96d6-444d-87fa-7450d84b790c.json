@@ -130,7 +130,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/getcoursedetails?name=postman",
+							"raw": "{{url}}/getcoursedetails?name=Postman",
 							"host": [
 								"{{url}}"
 							],
@@ -140,7 +140,7 @@
 							"query": [
 								{
 									"key": "name",
-									"value": "postman"
+									"value": "Postman"
 								}
 							]
 						}
