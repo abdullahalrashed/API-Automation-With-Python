@@ -88,7 +88,10 @@
 					"script": {
 						"id": "b7c20171-e100-46a3-9f81-c196b94a9231",
 						"exec": [
-							""
+							"const jsonData = pm.response.json();    ",
+							"",
+							"pm.expect(jsonData >10000).to.be.true;",
+							"pm.expect(jsonData.category).to.eql(\"javascript\";)"
 						],
 						"type": "text/javascript",
 						"packages": {},
