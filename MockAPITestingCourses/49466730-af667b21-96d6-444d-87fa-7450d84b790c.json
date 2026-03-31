@@ -95,7 +95,7 @@
 							"pm.expect(jsonData >1000).to.be.true;",
 							"",
 							"pm.expect(jsonData.category).to.eql(\"Javascript\");",
-							"}"
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {},
