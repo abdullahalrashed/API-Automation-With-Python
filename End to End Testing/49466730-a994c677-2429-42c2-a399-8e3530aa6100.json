@@ -132,7 +132,13 @@
 			},
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzNzgxMywiZXhwIjoxODA2NTk1NDEzfQ.7JYpYrGOI9d__pmupwicdcCRFxQdccoJkpmuJeYJPgM",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"orders\": [\n        {\n            \"country\": \"Bangladesh\",\n            \"productOrderedId\": \"69cceeaef86ba51a653d100f\"\n        }\n    ]\n}",
