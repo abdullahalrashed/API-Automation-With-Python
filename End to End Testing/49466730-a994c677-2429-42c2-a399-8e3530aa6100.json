@@ -227,7 +227,7 @@
 						"exec": [
 							"const jsonData = pm.response.json();",
 							"pm.response.to.have.status(200);",
-							"pm.expect(jsonData.data.productName).to.eql(pm.collectionVariables.get(\"productName\");",
+							"pm.expect(jsonData.data.productName).to.eql(pm.collectionVariables.get(\"product_name\"));",
 							""
 						],
 						"type": "text/javascript",
