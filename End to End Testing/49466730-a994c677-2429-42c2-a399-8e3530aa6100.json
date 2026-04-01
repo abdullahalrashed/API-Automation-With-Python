@@ -55,9 +55,10 @@
 						"type": "text"
 					},
 					{
-						"key": "productImage",
+						"key": "",
 						"value": "",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -97,6 +98,12 @@
 							"key": "productFor",
 							"value": "women",
 							"type": "text"
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"uuid": "f59b3db7-9242-4f7f-ae6b-94a13b6e98b8",
+							"value": null
 						}
 					]
 				},
