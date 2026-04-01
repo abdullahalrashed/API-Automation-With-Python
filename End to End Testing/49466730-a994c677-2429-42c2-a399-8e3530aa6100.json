@@ -51,7 +51,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzMjY2MSwiZXhwIjoxODA2NTkwMjYxfQ.PKrwCAILp1vh0pjFsiaTecE61ZkwChzwIOG5s1aYe7Q",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNjYzNkYWY4NmJhNTFhNjUzYzc0MzIiLCJ1c2VyRW1haWwiOiJyYWFzaGFyZTFAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTg4MTAwNTQwMiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTAzNzgxMywiZXhwIjoxODA2NTk1NDEzfQ.7JYpYrGOI9d__pmupwicdcCRFxQdccoJkpmuJeYJPgM",
 						"type": "text"
 					},
 					{
@@ -103,7 +103,7 @@
 							"key": "productImage",
 							"type": "file",
 							"uuid": "f59b3db7-9242-4f7f-ae6b-94a13b6e98b8",
-							"value": null
+							"src": "postman-cloud:///1f12db11-8c54-49c0-a8cd-48b198b0ba9f"
 						}
 					]
 				},
