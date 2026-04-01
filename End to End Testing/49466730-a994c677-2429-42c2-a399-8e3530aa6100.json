@@ -91,7 +91,7 @@
 						},
 						{
 							"key": "productAddedBy",
-							"value": "69ccc3daf86ba51a653c7432",
+							"value": "{{user_id}}",
 							"type": "text"
 						},
 						{
