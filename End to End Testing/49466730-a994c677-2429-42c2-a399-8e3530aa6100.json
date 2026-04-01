@@ -225,7 +225,10 @@
 					"script": {
 						"id": "c5d6485d-da84-480f-8d05-1b28a9adcb48",
 						"exec": [
-							"pm.response.to.have.status(200);"
+							"const jsonData = pm.response.json();",
+							"pm.response.to.have.status(200);",
+							"pm.expect(jsonData.productName).to.eql(pm.collectionVariables.get(\"productName\");",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {},
