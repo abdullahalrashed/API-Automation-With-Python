@@ -369,6 +369,10 @@
 			"key": "product_name",
 			"value": "",
 			"type": "default"
+		},
+		{
+			"key": "productId",
+			"value": ""
 		}
 	]
 }
