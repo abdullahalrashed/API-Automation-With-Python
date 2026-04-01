@@ -123,6 +123,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Create Order",
+			"id": "49466730-1f63d56b-9ff4-43be-a8ff-42018944b9bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
