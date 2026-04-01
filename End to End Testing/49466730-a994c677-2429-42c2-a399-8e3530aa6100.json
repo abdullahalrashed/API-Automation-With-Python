@@ -7,6 +7,26 @@
 	"item": [
 		{
 			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4127d9e5-002c-4fdc-a29e-9f04162aa477",
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.expect(jsonData.message).to.eql(\"Login Successfully\");",
+							"",
+							"pm.collectionVariables.set(\"token\", jsonData.token);",
+							"pm.collectionVariables.set(\"user_id\", jsonData.user_id);",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49466730-57bc5ad7-72fc-45d0-bf35-2f4c47449368",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
