@@ -325,7 +325,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "71b304f9-91e1-4d9b-b617-71e7133d30ba",
+				"id": "29a874fa-6e46-48a8-a562-e72c4970182a",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -337,7 +337,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f2930fe6-bdf6-47a0-9e9f-0a9aec693e33",
+				"id": "f8c73329-a92e-4370-97bb-8f48faf2849b",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -362,13 +362,11 @@
 		},
 		{
 			"key": "order_id",
-			"value": "",
-			"type": "default"
+			"value": ""
 		},
 		{
 			"key": "product_name",
-			"value": "",
-			"type": "default"
+			"value": ""
 		},
 		{
 			"key": "productId",
