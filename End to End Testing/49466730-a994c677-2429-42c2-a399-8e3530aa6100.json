@@ -338,6 +338,11 @@
 			"key": "order_id",
 			"value": "",
 			"type": "default"
+		},
+		{
+			"key": "product_name",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
