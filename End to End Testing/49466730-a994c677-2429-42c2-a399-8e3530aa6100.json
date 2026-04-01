@@ -173,7 +173,27 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=69ccf3a3f86ba51a653d21a2",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"api",
+						"ecom",
+						"order",
+						"get-orders-details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "69ccf3a3f86ba51a653d21a2"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -193,7 +213,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://rahulshettyacademy.com/api/ecom/product/delete-product/69cceeaef86ba51a653d100f",
+					"raw": "https://rahulshettyacademy.com/api/ecom/product/delete-product/69ccf3a3f86ba51a653d21a2",
 					"protocol": "https",
 					"host": [
 						"rahulshettyacademy",
@@ -204,7 +224,7 @@
 						"ecom",
 						"product",
 						"delete-product",
-						"69cceeaef86ba51a653d100f"
+						"69ccf3a3f86ba51a653d21a2"
 					]
 				}
 			},
